@@ -1,0 +1,26 @@
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/608e58134e5a103008f20f0c
+
+###
+POST http://localhost:3000/subscribers
+Content-Type:application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel" : "AbrialWong"
+}
+
+###
+DELETE http://localhost:3000/subscribers/608e58134e5a103008f20f0c
+
+###
+PATCH http://localhost:3000/subscribers/608e60da1ced631a0c1cebe7
+Content-Type: application/json
+
+{
+    "name" :"Jenny"
+}
